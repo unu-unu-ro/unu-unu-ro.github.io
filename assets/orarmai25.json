@@ -1,7 +1,7 @@
 {
   "joi_1_mai": [
-    { "ora": "10:00 - 12:00", "activitate": "Sosire & Prânz de bun venit 🍽️" },
-    { "ora": "13:00", "activitate": "Cazare & așezare în camere 🛏️" },
+    { "ora": "10:00 - 12:00", "activitate": "Sosire & așezare în camere 🛏️" },
+    { "ora": "13:00", "activitate": " Prânz de bun venit 🍽️" },
     { "ora": "15:30", "activitate": "Timp liber / relaxare / plimbare 🌳" },
     {
       "ora": "17:30",
