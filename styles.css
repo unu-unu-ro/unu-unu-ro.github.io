@@ -27,11 +27,16 @@ header {
   align-items: center;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
 .logo-svg {
   height: 40px;
   width: auto;
-  filter: brightness(0) saturate(100%) invert(93%) sepia(4%) saturate(1033%)
-    hue-rotate(12deg) brightness(106%) contrast(96%);
 }
 
 nav a {
@@ -388,20 +393,20 @@ footer {
     margin: 0;
     transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
   }
-  
+
   /* Position the bars evenly spaced in the normal state */
   .bar:nth-child(1) {
     top: 0;
   }
-  
+
   .bar:nth-child(2) {
     top: 10px; /* Fixed position for middle bar */
   }
-  
+
   .bar:nth-child(3) {
     top: 20px; /* Fixed position for bottom bar */
   }
-  
+
   /* Transform the bars into a symmetrical X */
   .mobile-menu-button.active .bar:nth-child(1) {
     top: 10px; /* Move to center */

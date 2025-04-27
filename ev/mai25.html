@@ -205,25 +205,6 @@
         font-weight: 600;
       }
 
-      .map-container {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 60%;
-        overflow: hidden;
-        border-radius: 8px;
-        margin-top: 1rem;
-      }
-
-      .map-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -249,9 +230,15 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="../assets/logo_primary.svg" alt="Unu Unu" class="logo-svg" />
-      </div>
+      <a href="../index.html" class="logo-link">
+        <div class="logo">
+          <img
+            src="../assets/logo_primary.svg"
+            alt="Unu Unu"
+            class="logo-svg"
+          />
+        </div>
+      </a>
       <button class="mobile-menu-button" aria-label="Meniu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -357,7 +344,7 @@
       <a href="../index.html" class="back-button">← Înapoi la hub informații</a>
     </div>
 
-    <footer>&copy; 2025 Unu Unu. Toate drepturile rezervate.</footer>
+    <footer>&copy; 2025 Biserica Unu Unu, Cluj-Napoca 🤍</footer>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
