@@ -1,7 +1,7 @@
 {
   "joi_1_mai": [
-    { "ora": "10:00 - 12:00", "activitate": "Sosire & Prânz de bun venit 🍽️" },
-    { "ora": "13:00", "activitate": "Cazare & așezare în camere 🛏️" },
+    { "ora": "10:00 - 12:00", "activitate": "Sosire & așezare în camere 🛏️" },
+    { "ora": "13:00", "activitate": " Prânz de bun venit 🍽️" },
     { "ora": "15:30", "activitate": "Timp liber / relaxare / plimbare 🌳" },
     {
       "ora": "17:30",
@@ -31,7 +31,7 @@
     { "ora": "19:00", "activitate": "Cina 🍽️" },
     {
       "ora": "20:30",
-      "activitate": "Jocuri în grupuri mici, ceai, părtășie ☕🧩"
+      "activitate": "Jocuri în grupuri mici, părtășie ☕🧩"
     }
   ],
   "sambata_3_mai": [
@@ -49,7 +49,7 @@
       "ora": "14:30",
       "activitate": "Timp liber / competiții sportive / board games 🏀🎯"
     },
-    { "ora": "14:30", "activitate": "Jocuri organizate cu copiii" },
+    { "ora": "15:30|16:00", "activitate": "Jocuri organizate cu copiii" },
     {
       "ora": "17:30",
       "activitate": "Întâlnire de seară: Închinare + Mesaj 💬🎼"
