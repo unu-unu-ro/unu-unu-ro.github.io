@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programul ieșirii 1-4 Mai 2025 - Unu Unu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Switzer:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <style>
+      .program-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+
+      .program-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .program-header h1 {
+        color: #ac5334;
+        margin-bottom: 0.5rem;
+      }
+
+      .program-header p {
+        color: #666;
+        font-size: 1.1rem;
+      }
+
+      .tab-navigation {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .tab-btn {
+        background-color: #f5f0ea;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        margin: 0.5rem;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 500;
+        color: #666;
+        transition: all 0.3s ease;
+      }
+
+      .tab-btn.active {
+        background-color: #ac5334;
+        color: white;
+        box-shadow: 0 4px 8px rgba(172, 83, 52, 0.3);
+      }
+
+      .tab-btn:hover {
+        background-color: #e6d2b8;
+      }
+
+      .tab-btn.active:hover {
+        background-color: #8d442b;
+      }
+
+      .tab-content {
+        display: none;
+        animation: fadeIn 0.5s ease;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+
+      .program-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .program-item {
+        display: flex;
+        margin-bottom: 1rem;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease;
+      }
+
+      .program-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .program-time {
+        min-width: 100px;
+        font-weight: bold;
+        color: #ac5334;
+        margin-right: 1rem;
+      }
+
+      .program-activity {
+        flex: 1;
+      }
+
+      .back-button {
+        display: block;
+        margin: 2rem auto;
+        background-color: #ac5334;
+        color: white;
+        border: none;
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        text-align: center;
+        max-width: 200px;
+      }
+
+      .back-button:hover {
+        background-color: #8d442b;
+        transform: translateY(-2px);
+      }
+
+      /* Stiluri pentru secțiunea de locație */
+      .location-container {
+        background-color: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        margin-bottom: 2rem;
+      }
+
+      .location-details {
+        margin-bottom: 1.5rem;
+      }
+
+      .location-details h3 {
+        color: #ac5334;
+        margin-bottom: 0.5rem;
+      }
+
+      .location-details p {
+        margin-bottom: 0.75rem;
+        color: #555;
+      }
+
+      .location-details a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        background-color: #ac5334;
+        color: white;
+        text-decoration: none;
+        padding: 0.6rem 1.2rem;
+        border-radius: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .location-details a:hover {
+        background-color: #8d442b;
+        transform: translateY(-2px);
+      }
+
+      .map-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 60%;
+        overflow: hidden;
+        border-radius: 8px;
+        margin-top: 1rem;
+      }
+
+      .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .program-item {
+          flex-direction: column;
+        }
+
+        .program-time {
+          margin-bottom: 0.5rem;
+          margin-right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../assets/logo_primary.svg" alt="Unu Unu" class="logo-svg" />
+      </div>
+      <button class="mobile-menu-button" aria-label="Meniu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-menu">
+        <a href="../index.html#evenimente">Evenimente</a>
+        <a href="../index.html#anunturi">Anunțuri</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="program-container">
+      <div class="program-header">
+        <h1>Ieșire 1-4 Mai 2025</h1>
+        <p>Planificare & informații utile</p>
+      </div>
+
+      <div class="tab-navigation">
+        <button class="tab-btn active" data-tab="joi">Joi, 1 Mai</button>
+        <button class="tab-btn" data-tab="vineri">Vineri, 2 Mai</button>
+        <button class="tab-btn" data-tab="sambata">Sâmbătă, 3 Mai</button>
+        <button class="tab-btn" data-tab="duminica">Duminică, 4 Mai</button>
+        <button class="tab-btn" data-tab="locatie">Locație</button>
+      </div>
+
+      <div class="tab-content active" id="joi-content">
+        <ul class="program-list" id="joi-list"></ul>
+      </div>
+
+      <div class="tab-content" id="vineri-content">
+        <ul class="program-list" id="vineri-list"></ul>
+      </div>
+
+      <div class="tab-content" id="sambata-content">
+        <ul class="program-list" id="sambata-list"></ul>
+      </div>
+
+      <div class="tab-content" id="duminica-content">
+        <ul class="program-list" id="duminica-list"></ul>
+      </div>
+
+      <div class="tab-content" id="locatie-content">
+        <div class="location-container">
+          <div class="location-details">
+            <h3>Pensiunea Speranța</h3>
+            <p>
+              <strong>Adresă:</strong> DJ764B, Valea Drăganului 407478, Județul
+              Cluj
+            </p>
+            <p>
+              <strong>Cum ajungem:</strong> Pensiunea este situată în satul
+              Valea Drăganului, la aproximativ 75 km de Cluj-Napoca.
+            </p>
+            <p>
+              <strong>În apropiere:</strong> Drumeții spre Vârful Vlădeasa,
+              Cetatea Bologa și eventual Cascada Vălul Miresei.
+            </p>
+            <a
+              href="https://maps.app.goo.gl/Rd6ad5RoNeLNzK8g7"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Vezi pe Google Maps</a
+            >
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2770.814480936172!2d22.9178870518777!3d46.840648271437174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749a4c407f3e129%3A0xdd9e34f9353b4a01!2sPensiunea%20Speran%C8%9Ba!5e0!3m2!1sro!2sro!4v1714321449598!5m2!1sro!2sro"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <a href="../index.html" class="back-button">← Înapoi la hub informații</a>
+    </div>
+
+    <footer>&copy; 2025 Unu Unu. Toate drepturile rezervate.</footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Funcționalitate pentru meniul mobil
+        const mobileMenuButton = document.querySelector(".mobile-menu-button");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (mobileMenuButton) {
+          mobileMenuButton.addEventListener("click", () => {
+            mobileMenuButton.classList.toggle("active");
+            navMenu.classList.toggle("active");
+          });
+
+          document.querySelectorAll(".nav-menu a").forEach((link) => {
+            link.addEventListener("click", () => {
+              mobileMenuButton.classList.remove("active");
+              navMenu.classList.remove("active");
+            });
+          });
+        }
+
+        // Funcționalitate pentru taburi
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        // Funcție pentru activarea unui tab specific
+        function activateTab(tabId) {
+          // Dezactivează toate butoanele și conținuturile
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+          tabContents.forEach((content) => content.classList.remove("active"));
+
+          // Activează butonul și conținutul corespunzător
+          const targetButton = document.querySelector(
+            `.tab-btn[data-tab="${tabId}"]`
+          );
+          if (targetButton) {
+            targetButton.classList.add("active");
+            const targetContent = document.getElementById(`${tabId}-content`);
+            if (targetContent) {
+              targetContent.classList.add("active");
+            }
+          }
+        }
+
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const tabId = button.getAttribute("data-tab");
+            // Actualizează URL-ul cu hash-ul tabului
+            window.location.hash = tabId;
+            activateTab(tabId);
+          });
+        });
+
+        // Verifică dacă există un hash în URL la încărcarea paginii
+        if (window.location.hash) {
+          const tabId = window.location.hash.substring(1); // Elimină # din hash
+          activateTab(tabId);
+        }
+
+        // Ascultător pentru schimbări în hash (pentru navigarea înapoi/înainte)
+        window.addEventListener("hashchange", () => {
+          if (window.location.hash) {
+            const tabId = window.location.hash.substring(1);
+            activateTab(tabId);
+          }
+        });
+
+        // Încarcă datele din JSON și populează programul
+        fetch("../assets/orarmai25.json")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Eroare la încărcarea programului");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            populateProgram("joi-list", data.joi_1_mai);
+            populateProgram("vineri-list", data.vineri_2_mai);
+            populateProgram("sambata-list", data.sambata_3_mai);
+            populateProgram("duminica-list", data.duminica_4_mai);
+          })
+          .catch((error) => {
+            console.error("Eroare:", error);
+          });
+
+        // Funcție pentru popularea listelor de program
+        function populateProgram(listId, activities) {
+          const list = document.getElementById(listId);
+          activities.forEach((activity) => {
+            const listItem = document.createElement("li");
+            listItem.className = "program-item";
+
+            const timeDiv = document.createElement("div");
+            timeDiv.className = "program-time";
+            timeDiv.textContent = activity.ora;
+
+            const activityDiv = document.createElement("div");
+            activityDiv.className = "program-activity";
+            activityDiv.textContent = activity.activitate;
+
+            listItem.appendChild(timeDiv);
+            listItem.appendChild(activityDiv);
+            list.appendChild(listItem);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

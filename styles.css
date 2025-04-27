@@ -1,0 +1,446 @@
+body {
+  margin: 0;
+  font-family: "Switzer", sans-serif;
+  background-color: #f9f5f2;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #ac5334;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 40px;
+  font-size: 0.9rem;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-svg {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(93%) sepia(4%) saturate(1033%)
+    hue-rotate(12deg) brightness(106%) contrast(96%);
+}
+
+nav a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: white;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+  background: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(rgba(172, 83, 52, 0.7), rgba(172, 83, 52, 0.7)),
+    url("https://source.unsplash.com/1600x600/?church,community") center/cover
+      no-repeat;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1s ease;
+}
+
+.hero button {
+  background-color: #f9f5f2;
+  color: #ac5334;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #ac5334;
+  color: #f9f5f2;
+}
+
+.section {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ac5334;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #ac5334;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ac5334;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background-color: #e6d2b8;
+  color: #333;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stiluri pentru secțiunea Contact */
+.contact-info {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info a {
+  color: #ac5334;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Stiluri pentru cardurile de social media */
+.card-youtube,
+.card-instagram,
+.card-facebook,
+.card-website {
+  position: relative;
+  padding-top: 3.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-youtube:hover,
+.card-instagram:hover,
+.card-facebook:hover,
+.card-website:hover {
+  transform: translateY(-8px);
+}
+
+.card-youtube::before,
+.card-instagram::before,
+.card-facebook::before,
+.card-website::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-youtube::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1384/1384060.png");
+}
+
+.card-instagram::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/2111/2111463.png");
+}
+
+.card-facebook::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/733/733547.png");
+}
+
+.card-website::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1006/1006771.png");
+}
+
+.card-youtube {
+  background-color: #fef2f2;
+  border-top: 3px solid #ff0000;
+}
+
+.card-instagram {
+  background-color: #fdf2f8;
+  border-top: 3px solid #e1306c;
+}
+
+.card-facebook {
+  background-color: #eff6ff;
+  border-top: 3px solid #1877f2;
+}
+
+.card-website {
+  background-color: #f0fdf4;
+  border-top: 3px solid #10b981;
+}
+
+.card-youtube a,
+.card-instagram a,
+.card-facebook a,
+.card-website a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-youtube a {
+  background-color: #ff0000;
+  color: white;
+}
+
+.card-instagram a {
+  background-color: #e1306c;
+  color: white;
+}
+
+.card-facebook a {
+  background-color: #1877f2;
+  color: white;
+}
+
+.card-website a {
+  background-color: #10b981;
+  color: white;
+}
+
+.card-youtube a:hover,
+.card-instagram a:hover,
+.card-facebook a:hover,
+.card-website a:hover {
+  opacity: 0.9;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+/* Stiluri specifice pentru cardurile din secțiunea de contact - mai mici cu 50% */
+#contact .cards {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+#contact .card {
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+#contact .card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+#contact .card p {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#contact .card-youtube::before,
+#contact .card-instagram::before,
+#contact .card-facebook::before,
+#contact .card-website::before {
+  width: 30px;
+  height: 30px;
+}
+
+#contact .card-youtube,
+#contact .card-instagram,
+#contact .card-facebook,
+#contact .card-website {
+  padding-top: 2.5rem;
+}
+
+#contact .card-youtube a,
+#contact .card-instagram a,
+#contact .card-facebook a,
+#contact .card-website a {
+  padding: 0.3rem 1rem;
+  font-size: 0.8rem;
+}
+
+/* Stiluri pentru meniul mobil */
+.mobile-menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 2000;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 40px;
+    flex-direction: column;
+    background-color: #ac5334;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu a {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  /* Animație pentru butonul hamburger */
+  .mobile-menu-button.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .mobile-menu-button.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-button.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Stiluri pentru butoanele generale din carduri (cu excepția secțiunii contact) */
+#evenimente .card a,
+#anunturi .card a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.8rem;
+  background-color: #ac5334;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(172, 83, 52, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+#evenimente .card a:hover,
+#anunturi .card a:hover {
+  background-color: #8d442b;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(172, 83, 52, 0.4);
+  text-decoration: none;
+}

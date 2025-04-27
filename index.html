@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unu Unu - Hub Informațional</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Switzer:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/logo_primary.svg" alt="Unu Unu" class="logo-svg" />
+      </div>
+      <button class="mobile-menu-button" aria-label="Meniu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-menu">
+        <a href="#evenimente">Evenimente</a>
+        <a href="#anunturi">Anunțuri</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Aproape de Dumnezeu, aproape de fiecare om</h1>
+      <p>Descoperă evenimentele noastre și fii conectat la comunitate.</p>
+      <button
+        onclick="document.getElementById('anunturi').scrollIntoView({behavior: 'smooth'})"
+      >
+        Vezi Anunțurile
+      </button>
+    </section>
+
+    <!-- Secțiunile vor fi populate dinamic din JSON -->
+    <section id="evenimente" class="section"></section>
+    <section id="anunturi" class="section"></section>
+    <section id="contact" class="section"></section>
+
+    <footer>&copy; 2025 Unu Unu. Toate drepturile rezervate.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

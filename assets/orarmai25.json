@@ -1,0 +1,66 @@
+{
+  "joi_1_mai": [
+    { "ora": "10:00 - 12:00", "activitate": "Sosire & Prânz de bun venit 🍽️" },
+    { "ora": "13:00", "activitate": "Cazare & așezare în camere 🛏️" },
+    { "ora": "15:30", "activitate": "Timp liber / relaxare / plimbare 🌳" },
+    {
+      "ora": "17:30",
+      "activitate": "Întâlnire de seară: Închinare + Mesaj 🙌📖"
+    },
+    { "ora": "19:00", "activitate": "Cina 🍲" },
+    { "ora": "20:30", "activitate": "Socializare / Jocuri de societate ☕🎲" }
+  ],
+  "vineri_2_mai": [
+    { "ora": "08:30", "activitate": "Mic dejun 🍞" },
+    {
+      "ora": "09:30",
+      "activitate": "Timp de închinare & rugăciune (30 min) 🙏"
+    },
+    { "ora": "10:00", "activitate": "Întâlnire femei" },
+    { "ora": "10:00", "activitate": "Jocuri organizate cu copiii" },
+    { "ora": "13:00", "activitate": "Prânz 🍛" },
+    {
+      "ora": "14:30",
+      "activitate": "Siestă / timp liber / ateliere pentru copii / sport ⚽🎨"
+    },
+    { "ora": "15:00", "activitate": "Ieșire opțională la Cetatea Bologa 🏰" },
+    {
+      "ora": "17:30",
+      "activitate": "Întâlnire de seară: Închinare + Mesaj 🎶📖"
+    },
+    { "ora": "19:00", "activitate": "Cina 🍽️" },
+    {
+      "ora": "20:30",
+      "activitate": "Jocuri în grupuri mici, ceai, părtășie ☕🧩"
+    }
+  ],
+  "sambata_3_mai": [
+    { "ora": "08:30", "activitate": "Mic dejun 🥐" },
+    {
+      "ora": "09:30",
+      "activitate": "Timp de închinare & rugăciune (30 min) ⛪"
+    },
+    {
+      "ora": "10:30",
+      "activitate": "Drumeție la Vf. Vlădeasa 🥾⛰️"
+    },
+    { "ora": "13:00", "activitate": "Prânz 🍲" },
+    {
+      "ora": "14:30",
+      "activitate": "Timp liber / competiții sportive / board games 🏀🎯"
+    },
+    { "ora": "14:30", "activitate": "Jocuri organizate cu copiii" },
+    {
+      "ora": "17:30",
+      "activitate": "Întâlnire de seară: Închinare + Mesaj 💬🎼"
+    },
+    { "ora": "19:00", "activitate": "Cina 🍴" },
+    { "ora": "20:00", "activitate": "Program special: foc de tabără 🔥🌌" }
+  ],
+  "duminica_4_mai": [
+    { "ora": "08:30", "activitate": "Mic dejun 🥞" },
+    { "ora": "10:00–12:00", "activitate": "Întâlnire de biserică ⛪🙏" },
+    { "ora": "13:00", "activitate": "Prânz + Cina Domnului 🍲" },
+    { "ora": "13:30", "activitate": "Împachetare & plecare 🧳🚐" }
+  ]
+}

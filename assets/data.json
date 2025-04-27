@@ -1,0 +1,68 @@
+{
+  "sectiuni": [
+    {
+      "id": "evenimente",
+      "titlu": "Evenimente",
+      "carduri": [
+        {
+          "titlu": "Ieșire 1-4 mai 2025",
+          "info": "Vezi aici toate detaliile despre ieșirea din 1-4 mai 2025.",
+          "url": "pages/mai25.html",
+          "textbuton": "Program complet"
+        }
+      ]
+    },
+    {
+      "id": "anunturi",
+      "titlu": "Anunțuri",
+      "carduri": [
+        {
+          "titlu": "Vacanță întâlniri tineri",
+          "info": "Următoare întâlnire a grupului de tineri va fi pe 5 mai 2025.",
+          "url": "#",
+          "textbuton": ""
+        },
+        {
+          "titlu": "Săptămâna patimilor",
+          "info": "Hai cu noi să ne rugăm și să ne pregătim pentru sărbătoarea Învierii parcugând prin Scriptură relatările din săptămâna Mare!",
+          "url": "https://sp.unu-unu.ro/",
+          "textbuton": "Participă online"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "titlu": "Contact",
+      "carduri": [
+        {
+          "titlu": "",
+          "info": "Urmărește-ne pe canalul nostru de YouTube pentru predici și înregistrări ale evenimentelor.",
+          "url": "https://www.youtube.com/@Unu-unuRo",
+          "icon": "youtube",
+          "textbuton": "Abonează-te"
+        },
+        {
+          "titlu": "",
+          "info": "Urmărește-ne pe Instagram pentru a vedea cele mai recente fotografii și anunțuri.",
+          "url": "https://www.instagram.com/bisericaunuunu",
+          "icon": "instagram",
+          "textbuton": "Urmărește-ne"
+        },
+        {
+          "titlu": "",
+          "info": "Fii la curent cu evenimentele și anunțurile noastre pe pagina de Facebook.",
+          "url": "https://www.facebook.com/unu.unu.ro/",
+          "icon": "facebook",
+          "textbuton": "Follow"
+        },
+        {
+          "titlu": "",
+          "info": "Vizitează site-ul nostru oficial pentru mai multe informații despre comunitatea noastră.",
+          "url": "https://www.unu-unu.ro/",
+          "icon": "website",
+          "textbuton": "Vizitează"
+        }
+      ]
+    }
+  ]
+}
