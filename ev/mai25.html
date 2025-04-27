@@ -166,6 +166,45 @@
         transform: translateY(-2px);
       }
 
+      /* Stiluri pentru secțiunea de informații importante */
+      .info-section {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #e6d2b8;
+      }
+
+      .info-section h3 {
+        color: #ac5334;
+        margin-bottom: 1rem;
+      }
+
+      .info-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .info-list li {
+        margin-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        position: relative;
+        line-height: 1.5;
+        color: #555;
+      }
+
+      .info-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #ac5334;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .info-list li strong {
+        color: #ac5334;
+        font-weight: 600;
+      }
+
       .map-container {
         position: relative;
         width: 100%;
@@ -236,7 +275,7 @@
         <button class="tab-btn" data-tab="vineri">Vineri, 2 Mai</button>
         <button class="tab-btn" data-tab="sambata">Sâmbătă, 3 Mai</button>
         <button class="tab-btn" data-tab="duminica">Duminică, 4 Mai</button>
-        <button class="tab-btn" data-tab="locatie">Locație</button>
+        <button class="tab-btn" data-tab="locatie">Informații utile</button>
       </div>
 
       <div class="tab-content active" id="joi-content">
@@ -278,13 +317,35 @@
               >Vezi pe Google Maps</a
             >
           </div>
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2770.814480936172!2d22.9178870518777!3d46.840648271437174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749a4c407f3e129%3A0xdd9e34f9353b4a01!2sPensiunea%20Speran%C8%9Ba!5e0!3m2!1sro!2sro!4v1714321449598!5m2!1sro!2sro"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+
+          <div class="info-section">
+            <h3>Informații importante</h3>
+            <ul class="info-list">
+              <li>
+                <strong>Apă:</strong> Apa este potabilă (apă de izvor). Este
+                recomandat ca fiecare participant să aibă un recipient propriu
+                pentru apă.
+              </li>
+              <li>
+                <strong>Gustări:</strong> Dacă doriți să aduceți snack-uri,
+                acestea se vor consuma doar în exterior, nu în camere sau pe
+                holuri.
+              </li>
+              <li>
+                <strong>Copii:</strong> Vă rugăm să nu lăsați copiii
+                nesupravegheați în niciun moment.
+              </li>
+              <li>
+                <strong>Drumeții:</strong> Pentru drumeții, asigurați-vă că
+                aveți încălțăminte corespunzătoare și echipament adecvat.
+              </li>
+              <li>
+                <strong>Obiecte personale:</strong> Vă recomandăm să aveți la
+                dvs. medicamente personale, produse de igienă și haine adecvate
+                pentru activitățile în aer liber.
+              </li>
+              <li><strong>Internet:</strong> Locația dispune de Wi-Fi</li>
+            </ul>
           </div>
         </div>
       </div>
