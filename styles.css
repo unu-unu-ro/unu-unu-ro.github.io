@@ -212,13 +212,16 @@ footer {
   padding-top: 3.5rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white; /* Unified white background for all cards */
+  border-left: 3px solid #ac5334; /* More subtle border on the left instead of top */
 }
 
 .card-youtube:hover,
 .card-instagram:hover,
 .card-facebook:hover,
 .card-website:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px); /* Reduced hover effect to match other cards */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Matching other card hover shadows */
 }
 
 .card-youtube::before,
@@ -235,6 +238,7 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.7; /* Making icons more subtle */
 }
 
 .card-youtube::before {
@@ -253,26 +257,6 @@ footer {
   background-image: url("https://cdn-icons-png.flaticon.com/512/1006/1006771.png");
 }
 
-.card-youtube {
-  background-color: #fef2f2;
-  border-top: 3px solid #ff0000;
-}
-
-.card-instagram {
-  background-color: #fdf2f8;
-  border-top: 3px solid #e1306c;
-}
-
-.card-facebook {
-  background-color: #eff6ff;
-  border-top: 3px solid #1877f2;
-}
-
-.card-website {
-  background-color: #f0fdf4;
-  border-top: 3px solid #10b981;
-}
-
 .card-youtube a,
 .card-instagram a,
 .card-facebook a,
@@ -283,26 +267,8 @@ footer {
   border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.card-youtube a {
-  background-color: #ff0000;
-  color: white;
-}
-
-.card-instagram a {
-  background-color: #e1306c;
-  color: white;
-}
-
-.card-facebook a {
-  background-color: #1877f2;
-  color: white;
-}
-
-.card-website a {
-  background-color: #10b981;
+  transition: all 0.3s ease;
+  background-color: #ac5334; /* Unified button color matching site theme */
   color: white;
 }
 
@@ -310,9 +276,10 @@ footer {
 .card-instagram a:hover,
 .card-facebook a:hover,
 .card-website a:hover {
-  opacity: 0.9;
+  background-color: #8d442b; /* Consistent hover state with other buttons */
+  opacity: 1; /* Full opacity on hover */
   text-decoration: none;
-  transform: scale(1.05);
+  transform: translateY(-2px); /* Subtle lift effect */
 }
 
 /* Stiluri specifice pentru cardurile din secțiunea de contact - mai mici cu 50% */
