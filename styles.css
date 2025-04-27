@@ -333,6 +333,7 @@ footer {
   cursor: pointer;
   padding: 0;
   z-index: 2000;
+  position: relative; /* Added position relative for proper child positioning */
 }
 
 .bar {
@@ -340,15 +341,19 @@ footer {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  transition: all 0.3s ease-in-out;
   background-color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
   .mobile-menu-button {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 24px; /* Fixed height */
+    width: 25px; /* Fixed width */
+    padding: 0;
+    position: relative; /* Ensure positioning context for absolute positioned children */
   }
 
   .nav-menu {
@@ -374,9 +379,33 @@ footer {
     display: block;
   }
 
-  /* Animație pentru butonul hamburger */
+  /* Reset the normal state for the hamburger bars */
+  .bar {
+    position: absolute; /* Absolute positioning for better control */
+    width: 25px;
+    height: 3px;
+    left: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
+  /* Position the bars evenly spaced in the normal state */
+  .bar:nth-child(1) {
+    top: 0;
+  }
+  
+  .bar:nth-child(2) {
+    top: 10px; /* Fixed position for middle bar */
+  }
+  
+  .bar:nth-child(3) {
+    top: 20px; /* Fixed position for bottom bar */
+  }
+  
+  /* Transform the bars into a symmetrical X */
   .mobile-menu-button.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    top: 10px; /* Move to center */
+    transform: rotate(45deg);
   }
 
   .mobile-menu-button.active .bar:nth-child(2) {
@@ -384,7 +413,8 @@ footer {
   }
 
   .mobile-menu-button.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    top: 10px; /* Move to center */
+    transform: rotate(-45deg);
   }
 }
 
