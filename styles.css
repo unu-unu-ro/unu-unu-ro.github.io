@@ -58,32 +58,31 @@ nav a::after {
   right: 0;
   background: white;
   transition: width 0.3s ease;
-  -webkit-transition: width 0.3s ease;
 }
 
 nav a:hover::after {
   width: 100%;
   left: 0;
-  background: white;
 }
 
 .hero {
   text-align: center;
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   background: linear-gradient(rgba(172, 83, 52, 0.7), rgba(172, 83, 52, 0.7)),
     url("https://source.unsplash.com/1600x600/?church,community") center/cover
       no-repeat;
   color: white;
+  max-height: 75vh;
 }
 
 .hero h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
   animation: fadeInDown 1s ease;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   animation: fadeInUp 1s ease;
 }
 
@@ -91,11 +90,11 @@ nav a:hover::after {
   background-color: #f9f5f2;
   color: #ac5334;
   border: none;
-  padding: 0.75rem;
-  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
   cursor: pointer;
   border-radius: 30px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -104,7 +103,35 @@ nav a:hover::after {
   color: #f9f5f2;
 }
 
+.main-title {
+  text-align: center;
+  padding: 1.5rem 1rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-title h2 {
+  color: #ac5334;
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.main-title h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: #ac5334;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .section {
+  scroll-margin-top: 30px;
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -112,7 +139,7 @@ nav a:hover::after {
 
 .section h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   color: #ac5334;
 }
@@ -188,7 +215,7 @@ footer {
   }
 }
 
-/* Stiluri pentru secțiunea Contact */
+/* Contact section styles */
 .contact-info {
   text-align: center;
   margin-bottom: 2rem;
@@ -208,7 +235,7 @@ footer {
   text-decoration: underline;
 }
 
-/* Stiluri pentru cardurile de social media */
+/* Social media cards */
 .card-youtube,
 .card-instagram,
 .card-facebook,
@@ -217,16 +244,16 @@ footer {
   padding-top: 3.5rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: white; /* Unified white background for all cards */
-  border-left: 3px solid #ac5334; /* More subtle border on the left instead of top */
+  background-color: white;
+  border-left: 3px solid #ac5334;
 }
 
 .card-youtube:hover,
 .card-instagram:hover,
 .card-facebook:hover,
 .card-website:hover {
-  transform: translateY(-5px); /* Reduced hover effect to match other cards */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Matching other card hover shadows */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-youtube::before,
@@ -243,7 +270,7 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.7; /* Making icons more subtle */
+  opacity: 0.7;
 }
 
 .card-youtube::before {
@@ -262,6 +289,7 @@ footer {
   background-image: url("https://cdn-icons-png.flaticon.com/512/1006/1006771.png");
 }
 
+/* Button styles for all social cards */
 .card-youtube a,
 .card-instagram a,
 .card-facebook a,
@@ -273,7 +301,7 @@ footer {
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
-  background-color: #ac5334; /* Unified button color matching site theme */
+  background-color: #ac5334;
   color: white;
 }
 
@@ -281,13 +309,13 @@ footer {
 .card-instagram a:hover,
 .card-facebook a:hover,
 .card-website a:hover {
-  background-color: #8d442b; /* Consistent hover state with other buttons */
-  opacity: 1; /* Full opacity on hover */
+  background-color: #8d442b;
+  opacity: 1;
   text-decoration: none;
-  transform: translateY(-2px); /* Subtle lift effect */
+  transform: translateY(-2px);
 }
 
-/* Stiluri specifice pentru cardurile din secțiunea de contact - mai mici cu 50% */
+/* Contact section specific card styles */
 #contact .cards {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 }
@@ -330,7 +358,7 @@ footer {
   font-size: 0.8rem;
 }
 
-/* Stiluri pentru meniul mobil */
+/* Mobile menu styling */
 .mobile-menu-button {
   display: none;
   background: transparent;
@@ -338,7 +366,7 @@ footer {
   cursor: pointer;
   padding: 0;
   z-index: 2000;
-  position: relative; /* Added position relative for proper child positioning */
+  position: relative;
 }
 
 .bar {
@@ -355,10 +383,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 24px; /* Fixed height */
-    width: 25px; /* Fixed width */
+    height: 24px;
+    width: 25px;
     padding: 0;
-    position: relative; /* Ensure positioning context for absolute positioned children */
+    position: relative;
   }
 
   .nav-menu {
@@ -384,9 +412,9 @@ footer {
     display: block;
   }
 
-  /* Reset the normal state for the hamburger bars */
+  /* Hamburger menu animation */
   .bar {
-    position: absolute; /* Absolute positioning for better control */
+    position: absolute;
     width: 25px;
     height: 3px;
     left: 0;
@@ -394,22 +422,20 @@ footer {
     transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
   }
 
-  /* Position the bars evenly spaced in the normal state */
   .bar:nth-child(1) {
     top: 0;
   }
 
   .bar:nth-child(2) {
-    top: 10px; /* Fixed position for middle bar */
+    top: 10px;
   }
 
   .bar:nth-child(3) {
-    top: 20px; /* Fixed position for bottom bar */
+    top: 20px;
   }
 
-  /* Transform the bars into a symmetrical X */
   .mobile-menu-button.active .bar:nth-child(1) {
-    top: 10px; /* Move to center */
+    top: 10px;
     transform: rotate(45deg);
   }
 
@@ -418,12 +444,12 @@ footer {
   }
 
   .mobile-menu-button.active .bar:nth-child(3) {
-    top: 10px; /* Move to center */
+    top: 10px;
     transform: rotate(-45deg);
   }
 }
 
-/* Stiluri pentru butoanele generale din carduri (cu excepția secțiunii contact) */
+/* Event and announcement card buttons */
 #evenimente .card a,
 #anunturi .card a {
   display: inline-block;
@@ -444,5 +470,4 @@ footer {
   background-color: #8d442b;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(172, 83, 52, 0.4);
-  text-decoration: none;
 }

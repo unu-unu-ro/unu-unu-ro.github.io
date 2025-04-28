@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unu Unu - Hub Informațional</title>
+    <meta
+      name="description"
+      content="Hub informațional Unu Unu, Cluj-Napoca."
+    />
+    <title>Hub Informații Unu-Unu</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Switzer:wght@400;500&display=swap"
       rel="stylesheet"
@@ -30,20 +34,29 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <h1>Aproape de Dumnezeu, aproape de fiecare om</h1>
-      <p>Descoperă evenimentele noastre și fii conectat la comunitate.</p>
-      <button
-        onclick="document.getElementById('anunturi').scrollIntoView({behavior: 'smooth'})"
-      >
-        Vezi Anunțurile
-      </button>
-    </section>
+    <main>
+      <section class="hero">
+        <h1>Aproape de Dumnezeu, aproape de fiecare om</h1>
+        <p>Descoperă evenimentele noastre și fii conectat la comunitate.</p>
+        <button
+          onclick="document.getElementById('anunturi').scrollIntoView({behavior: 'smooth'})"
+        >
+          Vezi Anunțurile
+        </button>
+      </section>
 
-    <!-- Secțiunile vor fi populate dinamic din JSON -->
-    <section id="evenimente" class="section"></section>
-    <section id="anunturi" class="section"></section>
-    <section id="contact" class="section"></section>
+      <div class="main-title">
+        <h2>Hub informații</h2>
+      </div>
+
+      <section
+        id="evenimente"
+        class="section"
+        aria-label="Evenimente"
+      ></section>
+      <section id="anunturi" class="section" aria-label="Anunțuri"></section>
+      <section id="contact" class="section" aria-label="Contact"></section>
+    </main>
 
     <footer>&copy; 2025 Biserica Unu Unu, Cluj-Napoca 🤍</footer>
 
