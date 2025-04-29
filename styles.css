@@ -245,7 +245,6 @@ footer {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: white;
-  border-left: 3px solid #ac5334;
 }
 
 .card-youtube:hover,
