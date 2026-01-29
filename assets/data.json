@@ -17,16 +17,10 @@
       "titlu": "Anunțuri",
       "carduri": [
         {
-          "titlu": "Vacanță întâlniri tineri",
-          "info": "Următoare întâlnire a grupului de tineri va fi pe 5 mai 2025.",
-          "url": "#",
-          "textbuton": ""
-        },
-        {
-          "titlu": "Săptămâna patimilor",
-          "info": "Hai cu noi să ne rugăm și să ne pregătim pentru sărbătoarea Învierii parcugând prin Scriptură relatările din săptămâna Mare!",
-          "url": "https://sp.unu-unu.ro/",
-          "textbuton": "Participă online"
+          "titlu": "Atelier de predicare expozitivă 2026",
+          "info": "În 2-4 martie găzduim un atelier de predicare expozitivă Charles Simeon Trust. Detalii și înscrieri aici.",
+          "url": "https://cst.unu-unu.ro/events/CJ-2026/",
+          "textbuton": "Vezi detalii"
         }
       ]
     },
