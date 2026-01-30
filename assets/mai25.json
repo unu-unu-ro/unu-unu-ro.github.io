@@ -1,0 +1,325 @@
+{
+  "eventInfo": {
+    "title": "Ieșire 1-4 Mai 2025",
+    "subtitle": "Planificare & informații utile",
+    "dateRange": "1-4 Mai 2025",
+    "location": "Valea Draganului",
+    "urls": [
+      {
+        "url": "https://maps.app.goo.gl/ds54EMt92p4Jd7Rk8",
+        "title": "Google maps"
+      }
+    ],
+    "timezone": "Europe/Bucharest"
+  },
+  "days": [
+    {
+      "id": "day-1",
+      "date": "2025-05-01",
+      "dayLabel": "Joi, 1 Mai",
+      "theme": "Sosire & Bun Venit",
+      "activities": [
+        {
+          "id": "d1-a1",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "title": "Sosire & așezare în camere",
+          "type": "logistics",
+          "icon": "🛏️"
+        },
+        {
+          "id": "d1-a2",
+          "startTime": "13:00",
+          "endTime": "14:30",
+          "title": "Prânz de bun venit",
+          "type": "meal",
+          "icon": "🍽️"
+        },
+        {
+          "id": "d1-a3",
+          "startTime": "15:30",
+          "endTime": "17:30",
+          "title": "Timp liber / relaxare / plimbare",
+          "type": "recreation",
+          "icon": "🌳"
+        },
+        {
+          "id": "d1-a4",
+          "startTime": "17:30",
+          "endTime": "19:00",
+          "title": "Întâlnire de seară: Închinare + Mesaj",
+          "type": "worship",
+          "icon": "🙌"
+        },
+        {
+          "id": "d1-a5",
+          "startTime": "19:00",
+          "endTime": "20:30",
+          "title": "Cina",
+          "type": "meal",
+          "icon": "🍲"
+        },
+        {
+          "id": "d1-a6",
+          "startTime": "20:30",
+          "endTime": "22:00",
+          "title": "Socializare / Jocuri de societate",
+          "type": "recreation",
+          "icon": "🎲"
+        }
+      ]
+    },
+    {
+      "id": "day-2",
+      "date": "2025-05-02",
+      "dayLabel": "Vineri, 2 Mai",
+      "theme": "Întâlniri și Activități",
+      "activities": [
+        {
+          "id": "d2-a1",
+          "startTime": "08:30",
+          "endTime": "09:30",
+          "title": "Mic dejun",
+          "type": "meal",
+          "icon": "🍞"
+        },
+        {
+          "id": "d2-a2",
+          "startTime": "09:30",
+          "endTime": "10:00",
+          "title": "Timp de închinare & rugăciune",
+          "description": "30 minute",
+          "type": "worship",
+          "icon": "🙏"
+        },
+        {
+          "id": "d2-a3",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "title": "Întâlnire femei",
+          "type": "meeting",
+          "icon": "👥"
+        },
+        {
+          "id": "d2-a4",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "title": "Jocuri organizate cu copiii",
+          "type": "recreation",
+          "icon": "🎨"
+        },
+        {
+          "id": "d2-a5",
+          "startTime": "13:00",
+          "endTime": "14:30",
+          "title": "Prânz",
+          "type": "meal",
+          "icon": "🍛"
+        },
+        {
+          "id": "d2-a6",
+          "startTime": "14:30",
+          "endTime": "17:30",
+          "title": "Siestă / timp liber / ateliere pentru copii / sport",
+          "type": "recreation",
+          "icon": "⚽"
+        },
+        {
+          "id": "d2-a7",
+          "startTime": "14:30",
+          "endTime": "17:30",
+          "title": "Ieșire opțională la Cetatea Bologa",
+          "type": "recreation",
+          "icon": "🏰"
+        },
+        {
+          "id": "d2-a8",
+          "startTime": "17:30",
+          "endTime": "19:00",
+          "title": "Întâlnire de seară: Închinare + Mesaj",
+          "type": "worship",
+          "icon": "🎶"
+        },
+        {
+          "id": "d2-a9",
+          "startTime": "19:00",
+          "endTime": "20:30",
+          "title": "Cina",
+          "type": "meal",
+          "icon": "🍽️"
+        },
+        {
+          "id": "d2-a10",
+          "startTime": "20:30",
+          "endTime": "22:00",
+          "title": "Jocuri în grupuri mici, părtășie",
+          "type": "recreation",
+          "icon": "🧩"
+        }
+      ]
+    },
+    {
+      "id": "day-3",
+      "date": "2025-05-03",
+      "dayLabel": "Sâmbătă, 3 Mai",
+      "theme": "Drumeție și Activități",
+      "activities": [
+        {
+          "id": "d3-a1",
+          "startTime": "07:30",
+          "endTime": "08:30",
+          "title": "Întâlnire bărbați",
+          "type": "meeting",
+          "icon": "💪"
+        },
+        {
+          "id": "d3-a2",
+          "startTime": "08:30",
+          "endTime": "09:30",
+          "title": "Mic dejun",
+          "type": "meal",
+          "icon": "🥐"
+        },
+        {
+          "id": "d3-a3",
+          "startTime": "09:30",
+          "endTime": "10:00",
+          "title": "Timp de închinare & rugăciune",
+          "description": "30 minute",
+          "type": "worship",
+          "icon": "⛪"
+        },
+        {
+          "id": "d3-a4",
+          "startTime": "10:30",
+          "endTime": "13:00",
+          "title": "Drumeție - Plimbare",
+          "type": "recreation",
+          "icon": "🥾"
+        },
+        {
+          "id": "d3-a5",
+          "startTime": "13:00",
+          "endTime": "14:30",
+          "title": "Prânz",
+          "type": "meal",
+          "icon": "🍲"
+        },
+        {
+          "id": "d3-a6",
+          "startTime": "14:30",
+          "endTime": "17:30",
+          "title": "Timp liber / competiții sportive / board games",
+          "type": "recreation",
+          "icon": "🏀"
+        },
+        {
+          "id": "d3-a7",
+          "startTime": "15:30",
+          "endTime": "17:30",
+          "title": "Jocuri organizate cu copiii",
+          "type": "recreation",
+          "icon": "🎨"
+        },
+        {
+          "id": "d3-a8",
+          "startTime": "17:30",
+          "endTime": "19:00",
+          "title": "Întâlnire de seară: Închinare + Mesaj",
+          "type": "worship",
+          "icon": "🎼"
+        },
+        {
+          "id": "d3-a9",
+          "startTime": "19:00",
+          "endTime": "20:00",
+          "title": "Cina",
+          "type": "meal",
+          "icon": "🍴"
+        },
+        {
+          "id": "d3-a10",
+          "startTime": "20:00",
+          "endTime": "22:00",
+          "title": "Program special: foc de tabără",
+          "type": "recreation",
+          "icon": "🔥"
+        }
+      ]
+    },
+    {
+      "id": "day-4",
+      "date": "2025-05-04",
+      "dayLabel": "Duminică, 4 Mai",
+      "theme": "Închinare și Plecare",
+      "activities": [
+        {
+          "id": "d4-a1",
+          "startTime": "08:30",
+          "endTime": "09:30",
+          "title": "Mic dejun",
+          "type": "meal",
+          "icon": "🥞"
+        },
+        {
+          "id": "d4-a2",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "title": "Întâlnire de biserică și Cina Domnului",
+          "type": "worship",
+          "icon": "⛪"
+        },
+        {
+          "id": "d4-a3",
+          "startTime": "12:30",
+          "endTime": "13:30",
+          "title": "Prânz",
+          "type": "meal",
+          "icon": "🍲"
+        },
+        {
+          "id": "d4-a4",
+          "startTime": "13:30",
+          "endTime": "15:00",
+          "title": "Împachetare & plecare",
+          "type": "logistics",
+          "icon": "🧳"
+        }
+      ]
+    }
+  ],
+  "activityTypes": {
+    "logistics": {
+      "color": "#9CA3AF",
+      "icon": "📋"
+    },
+    "session": {
+      "color": "#3B82F6",
+      "icon": "📖"
+    },
+    "meal": {
+      "color": "#F59E0B",
+      "icon": "🍽️"
+    },
+    "break": {
+      "color": "#FDE68A",
+      "icon": "☕"
+    },
+    "worship": {
+      "color": "#8B5CF6",
+      "icon": "🙏"
+    },
+    "recreation": {
+      "color": "#10B981",
+      "icon": "⚽"
+    },
+    "meeting": {
+      "color": "#EC4899",
+      "icon": "👥"
+    },
+    "other": {
+      "color": "#6B7280",
+      "icon": "📌"
+    }
+  }
+}
