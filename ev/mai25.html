@@ -25,87 +25,91 @@
       .program-container {
         max-width: 1000px;
         margin: 0 auto;
-        padding: 2rem 1rem;
+        padding: 1.25rem 1rem;
       }
 
       .program-header {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1.25rem;
       }
 
       .program-header h1 {
-        color: #ac5334;
-        margin-bottom: 0.5rem;
+        color: #80756a;
+        margin-bottom: 0.3rem;
+        font-size: 1.5rem;
+        font-weight: 500;
       }
 
       .program-header p {
         color: #666;
-        font-size: 1.1rem;
+        font-size: 0.95rem;
       }
 
       #schedule-container {
-        margin: 2rem 0;
+        margin: 1.25rem 0;
       }
 
       .back-button {
-        display: block;
-        margin: 2rem auto;
-        background-color: #ac5334;
-        color: white;
-        border: none;
-        padding: 0.8rem 2rem;
-        border-radius: 30px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease;
+        display: inline-block;
+        margin: 1.5rem 0;
+        color: #ac5334;
+        font-size: 0.85rem;
+        font-weight: 500;
         text-decoration: none;
-        text-align: center;
-        max-width: 200px;
+        transition: color 0.2s;
       }
 
       .back-button:hover {
-        background-color: #8d442b;
-        transform: translateY(-2px);
+        color: #8d442b;
+      }
+
+      .back-button::before {
+        content: "← ";
       }
 
       /* Info section styling */
       .info-section {
         background-color: white;
-        border-radius: 12px;
-        padding: 1.5rem;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        margin-top: 2rem;
+        border-radius: 10px;
+        padding: 1rem 1.25rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+        margin-top: 1.25rem;
+        border: 1px solid rgba(230, 210, 184, 0.3);
       }
 
       .info-section h3 {
-        color: #ac5334;
-        margin-bottom: 1rem;
+        color: #80756a;
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+        font-weight: 500;
       }
 
       .info-list {
         list-style-type: none;
         padding: 0;
+        margin: 0;
       }
 
       .info-list li {
-        margin-bottom: 0.8rem;
-        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+        padding-left: 1.25rem;
         position: relative;
-        line-height: 1.5;
+        line-height: 1.45;
         color: #555;
+        font-size: 0.9rem;
       }
 
       .info-list li::before {
         content: "•";
         position: absolute;
         left: 0;
-        color: #ac5334;
+        color: #63632e;
         font-weight: bold;
         font-size: 1.2rem;
       }
 
       .info-list li strong {
-        color: #ac5334;
+        color: #63632e;
         font-weight: 600;
       }
     </style>
@@ -128,8 +132,7 @@
         <span class="bar"></span>
       </button>
       <nav class="nav-menu">
-        <a href="../index.html#evenimente">Evenimente</a>
-        <a href="../index.html#anunțuri">Anunțuri</a>
+        <a href="../index.html#director">Evenimente</a>
         <a href="../index.html#contact">Contact</a>
       </nav>
     </header>
@@ -172,10 +175,12 @@
         </ul>
       </div>
 
-      <a href="../index.html" class="back-button">← Înapoi la hub informații</a>
+      <a href="../index.html#director" class="back-button"
+        >Înapoi la evenimente</a
+      >
     </div>
 
-    <footer>&copy; 2025 Biserica Unu Unu, Cluj-Napoca 🤍</footer>
+    <footer>&copy; 2026 Biserica Unu Unu, Cluj-Napoca 🤍</footer>
 
     <script type="module">
       import ScheduleWidget from "https://ovidiuchis.github.io/orar-widget/src/schedule-widget.js";

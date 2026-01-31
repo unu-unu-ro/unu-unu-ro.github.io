@@ -1,60 +1,39 @@
 {
   "sectiuni": [
     {
-      "id": "evenimente",
+      "id": "director",
       "titlu": "Evenimente",
+      "tip": "evenimente",
       "carduri": [
         {
-          "titlu": "Ieșire 1-4 mai 2025",
-          "info": "Vezi aici toate detaliile despre ieșirea din 1-4 mai 2025.",
+          "titlu": "Ieșire 1-4 Mai 2025",
+          "info": "Tabără de weekend cu întreaga comunitate. Program, cazare și toate detaliile.",
           "url": "ev/mai25.html",
-          "textbuton": "Program complet"
-        }
-      ]
-    },
-    {
-      "id": "anunturi",
-      "titlu": "Anunțuri",
-      "carduri": [
+          "textbuton": "Vezi programul",
+          "dataStart": "2025-05-01",
+          "dataEnd": "2025-05-04",
+          "tip": "tabără",
+          "locatie": "Valea Drăganului"
+        },
         {
-          "titlu": "Atelier de predicare expozitivă 2026",
-          "info": "În 2-4 martie găzduim un atelier de predicare expozitivă Charles Simeon Trust. Detalii și înscrieri aici.",
+          "titlu": "Atelier de predicare expozitivă",
+          "info": "Găzduim un atelier de predicare expozitivă Charles Simeon Trust.",
           "url": "https://cst.unu-unu.ro/events/CJ-2026/",
-          "textbuton": "Vezi detalii"
-        }
-      ]
-    },
-    {
-      "id": "contact",
-      "titlu": "Contact",
-      "carduri": [
-        {
-          "titlu": "",
-          "info": "Urmărește-ne pe canalul nostru de YouTube pentru predici și înregistrări ale evenimentelor.",
-          "url": "https://www.youtube.com/@Unu-unuRo",
-          "icon": "youtube",
-          "textbuton": "Abonează-te"
+          "textbuton": "Detalii & înscrieri",
+          "dataStart": "2026-03-02",
+          "dataEnd": "2026-03-04",
+          "tip": "atelier",
+          "locatie": "Cluj-Napoca"
         },
         {
-          "titlu": "",
-          "info": "Urmărește-ne pe Instagram pentru a vedea cele mai recente fotografii și anunțuri.",
-          "url": "https://www.instagram.com/bisericaunuunu",
-          "icon": "instagram",
-          "textbuton": "Urmărește-ne"
-        },
-        {
-          "titlu": "",
-          "info": "Fii la curent cu evenimentele și anunțurile noastre pe pagina de Facebook. Si aici ne poți urmări live.",
-          "url": "https://www.facebook.com/unu.unu.ro/",
-          "icon": "facebook",
-          "textbuton": "Follow"
-        },
-        {
-          "titlu": "",
-          "info": "Vizitează site-ul nostru oficial pentru mai multe informații despre comunitatea noastră.",
-          "url": "https://www.unu-unu.ro/",
-          "icon": "website",
-          "textbuton": "Vizitează"
+          "titlu": "Ieșire 30 Apr - 3 Mai 2026",
+          "info": "Tabără de weekend cu întreaga comunitate. Programul va fi anunțat în curând.",
+          "url": "https://pensiuneasequoia.ro/ro/",
+          "textbuton": "Vezi locația",
+          "dataStart": "2026-04-30",
+          "dataEnd": "2026-05-03",
+          "tip": "tabără",
+          "locatie": "Pensiunea Sequoia"
         }
       ]
     }
