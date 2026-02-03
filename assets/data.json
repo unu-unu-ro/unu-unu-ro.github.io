@@ -6,9 +6,28 @@
       "tip": "evenimente",
       "carduri": [
         {
+          "titlu": "Seară pentru familii",
+          "slug": "seara-15-feb",
+          "subtitle": "Întâlnire specială pentru familii",
+          "info": [
+            "O seară dedicată familiilor din biserica noastră, cu activități pentru copii și discuții pentru părinți. Vom servi masa împreună și vom avea un timp în care să învătăm unii de la alții. ",
+            "Invitați:<b> Beni și Nora Fărăgău</b>"
+          ],
+          "url": "",
+          "schedulefile": "",
+          "textbuton": "",
+          "dataStart": "2026-02-15",
+          "dataEnd": "2026-02-15",
+          "tip": "întâlnire",
+          "locatie": "Unu-Unu"
+        },
+        {
           "titlu": "Ieșire 1-4 Mai 2025",
+          "slug": "iesire-1-4-mai-2025",
+          "subtitle": "Planificare & informații utile",
           "info": "Tabără de weekend cu întreaga comunitate. Program, cazare și toate detaliile.",
-          "url": "ev/mai25.html",
+          "url": "",
+          "schedulefile": "mai25.json",
           "textbuton": "Vezi programul",
           "dataStart": "2025-05-01",
           "dataEnd": "2025-05-04",
@@ -16,8 +35,52 @@
           "locatie": "Valea Drăganului"
         },
         {
+          "titlu": "Întâlniri Crăciun 2025",
+          "slug": "intalniri-craciun-2025",
+          "subtitle": "Sărbătorim împreună Nașterea Domnului",
+          "info": [
+            "24.12, 18:00 - seară de colinde",
+            "25.12, 18:00 - întâlnire de sărbătoare",
+            "28.12, 10:00 - întâlnirea bisericii",
+            "28.12, 18:00 - micro revelion",
+            "1.1, 18:00 - întâlnire de an nou"
+          ],
+          "url": "",
+          "textbuton": "",
+          "dataStart": "2025-12-24",
+          "dataEnd": "2026-01-01",
+          "tip": "sărbători",
+          "locatie": "Cluj-Napoca"
+        },
+
+        {
+          "titlu": "Săptămâna de rugăciune 2026",
+          "slug": "saptamana-rugaciune-2026",
+          "subtitle": "În fiecare zi de la ora 18",
+          "info": [
+            "Vă invităm în fiecare seară, începând cu data de 4 Ianuarie 2026, la ora 18:00. Fiecare zi va avea o tematică specială.",
+            "4 Ianuarie, Duminică - Teo Cotrău",
+            "5 Ianuarie, Luni - Teofil Mihoc",
+            "6 Ianuarie, Marți - Gelu Dănuț",
+            "7 Ianuarie, Miercuri - Dani Suciu",
+            "8 Ianuarie, Joi - Emi Câra",
+            "9 Ianuarie, Vineri - Emi Ciupe",
+            "10 Ianuarie, Sâmbătă - Claudiu Pop",
+            "11 Ianuarie, Duminică - Dani Lacatoș"
+          ],
+          "url": "",
+          "textbuton": "",
+          "dataStart": "2026-01-04",
+          "dataEnd": "2026-01-11",
+          "tip": "rugăciune",
+          "locatie": "Cluj-Napoca"
+        },
+
+        {
           "titlu": "Atelier de predicare expozitivă",
-          "info": "Găzduim un atelier de predicare expozitivă Charles Simeon Trust.",
+          "slug": "atelier-predicare-expozitiva-2026",
+          "subtitle": "Charles Simeon Trust",
+          "info": " Biserica Baptistă UNU-UNU Cluj-Napoca găzduiește Seminarul de Predicare Biblică Expozitivă .  Acest seminar este pentru cei care sunt implicați în predicarea publică a Cuvântului lui Dumnezeu și pentru cei care se pregătesc pentru acest tip de lucrare. Este conceput pentru a întări capacitatea fiecărui pastor de a înțelege și de a proclama mai bine Cuvântul lui Dumnezeu, cu scopul de a întări fiecare biserică locală.",
           "url": "https://cst.unu-unu.ro/events/CJ-2026/",
           "textbuton": "Detalii & înscrieri",
           "dataStart": "2026-03-02",
@@ -27,6 +90,8 @@
         },
         {
           "titlu": "Ieșire 30 Apr - 3 Mai 2026",
+          "slug": "iesire-30-apr-3-mai-2026",
+          "subtitle": "Tabără de primăvară",
           "info": "Tabără de weekend cu întreaga comunitate. Programul va fi anunțat în curând.",
           "url": "https://pensiuneasequoia.ro/ro/",
           "textbuton": "Vezi locația",

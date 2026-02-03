@@ -91,6 +91,18 @@ function isPastEvent(endDate) {
   return now > end;
 }
 
+// Generate slug from title
+function generateSlug(title) {
+  return title
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
+    .replace(/[^a-z0-9\s-]/g, "") // Remove special chars
+    .replace(/\s+/g, "-") // Replace spaces with hyphens
+    .replace(/-+/g, "-") // Replace multiple hyphens
+    .trim();
+}
+
 // Render sections
 function renderSections(sectiuni) {
   sectiuni.forEach((sectiune) => {
@@ -190,8 +202,14 @@ function createEventItem(event, isPast) {
 
   const dateInfo = formatDateRange(event.dataStart, event.dataEnd);
 
+  // Generate slug if not provided
+  const slug = event.slug || generateSlug(event.titlu);
+
+  // Link to event detail page
+  const eventUrl = `/event?slug=${encodeURIComponent(slug)}`;
+
   li.innerHTML = `
-    <a href="${event.url}" class="event-item-link" ${!event.url.startsWith("ev/") && !event.url.startsWith("#") ? 'target="_blank" rel="noopener noreferrer"' : ""}>
+    <a href="${eventUrl}" class="event-item-link">
       <div class="event-date">
         <span class="event-date-day">${dateInfo.day}</span>
         <span class="event-date-month">${dateInfo.month}</span>
