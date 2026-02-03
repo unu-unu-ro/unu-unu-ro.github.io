@@ -206,7 +206,7 @@ function createEventItem(event, isPast) {
   const slug = event.slug || generateSlug(event.titlu);
 
   // Link to event detail page
-  const eventUrl = `/event?slug=${encodeURIComponent(slug)}`;
+  const eventUrl = `/event?${encodeURIComponent(slug)}`;
 
   li.innerHTML = `
     <a href="${eventUrl}" class="event-item-link">

@@ -33,7 +33,7 @@ Acest proiect web este hub-ul informațional oficial al Bisericii Unu Unu ([unu-
 | --------- | ----------------- | ------------------------------------ |
 | Acasă     | `/`               | Lista evenimentelor curente          |
 | Întâlniri | `/intalniri`      | Programul săptămânal al bisericii    |
-| Eveniment | `/event?slug=...` | Detalii despre un eveniment specific |
+| Eveniment | `/event?...` | Detalii despre un eveniment specific |
 
 ## Tehnologii utilizate
 

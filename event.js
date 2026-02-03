@@ -42,8 +42,9 @@ const MONTHS_RO = [
 
 // Get slug from URL
 function getSlugFromURL() {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get("slug");
+  // URL format: event?slug-value (without key=)
+  const queryString = window.location.search;
+  return queryString ? queryString.substring(1) : null;
 }
 
 // Format date for display
