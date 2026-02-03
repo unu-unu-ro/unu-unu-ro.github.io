@@ -124,16 +124,45 @@
         margin-top: 0.15rem;
       }
 
-      .section-intro {
-        text-align: center;
-        margin-bottom: 2rem;
-        padding: 0 1rem;
-      }
+        /* Secondary colors for specific activities */
+        .meeting-card.youth {
+          border-left-color: #748EAA;
+        }
+        .meeting-card.youth .meeting-icon {
+          background: linear-gradient(135deg, #748EAA 0%, #8fa3b8 100%);
+          box-shadow: 0 4px 12px rgba(116, 142, 170, 0.25);
+        }
+        .meeting-card.youth .meeting-time {
+          background: rgba(116, 142, 170, 0.1);
+          color: #748EAA;
+        }
 
-      .section-intro p {
-        color: #666;
-        font-size: 1rem;
-        max-width: 500px;
+        .meeting-card.adolescents {
+          border-left-color: #B7B59F;
+        }
+        .meeting-card.adolescents .meeting-icon {
+          background: linear-gradient(135deg, #B7B59F 0%, #c7c5b2 100%);
+          box-shadow: 0 4px 12px rgba(183, 181, 159, 0.25);
+        }
+        .meeting-card.adolescents .meeting-time {
+          background: rgba(183, 181, 159, 0.15);
+          color: #8a8871;
+        }
+
+        .meeting-card.women {
+          border-left-color: #D7CBCC;
+        }
+        .meeting-card.women .meeting-icon {
+          background: linear-gradient(135deg, #D7CBCC 0%, #e3dadb 100%);
+          box-shadow: 0 4px 12px rgba(215, 203, 204, 0.35);
+        }
+        .meeting-card.women .meeting-icon svg {
+          color: #593336;
+        }
+        .meeting-card.women .meeting-time {
+          background: rgba(215, 203, 204, 0.3);
+          color: #7a5a5c;
+        }
         margin: 0 auto;
         line-height: 1.6;
       }
@@ -222,7 +251,9 @@
               stroke-linejoin="round"
             >
               <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              <path
+                d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+              ></path>
               <line x1="12" y1="6" x2="12" y2="13"></line>
               <line x1="9" y1="9" x2="15" y2="9"></line>
             </svg>
@@ -245,7 +276,7 @@
           </span>
         </div>
 
-        <div class="meeting-card">
+        <div class="meeting-card youth">
           <div class="meeting-icon">
             <svg
               viewBox="0 0 24 24"
@@ -289,7 +320,9 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              ></polygon>
             </svg>
           </div>
           <div class="meeting-content">
@@ -310,7 +343,7 @@
           </span>
         </div>
 
-        <div class="meeting-card">
+        <div class="meeting-card adolescents">
           <div class="meeting-icon">
             <svg
               viewBox="0 0 24 24"
@@ -320,7 +353,9 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+              <path
+                d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"
+              ></path>
             </svg>
           </div>
           <div class="meeting-content">
@@ -341,7 +376,7 @@
           </span>
         </div>
 
-        <div class="meeting-card">
+        <div class="meeting-card women">
           <div class="meeting-icon">
             <svg
               viewBox="0 0 24 24"
@@ -351,7 +386,9 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
             </svg>
           </div>
           <div class="meeting-content">
