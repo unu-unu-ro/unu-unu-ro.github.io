@@ -385,7 +385,7 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  border-top: 1px solid #e8e4e1;
+  background-color: #111827;
 }
 
 .footer-social {
@@ -401,20 +401,20 @@ footer {
   justify-content: center;
   width: 40px;
   height: 40px;
-  color: #80756a;
+  color: #fff;
   border-radius: 50%;
   transition: all 0.2s;
 }
 
 .footer-social a:hover {
-  color: #ac5334;
-  background-color: rgba(172, 83, 52, 0.08);
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 footer p {
   margin: 0;
   font-size: 0.75rem;
-  color: #999;
+  color: #fff;
 }
 
 /* =====================================================
