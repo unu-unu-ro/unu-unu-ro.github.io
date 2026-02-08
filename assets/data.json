@@ -91,9 +91,19 @@
         },
         {
           "titlu": "Ieșire 30 Apr - 3 Mai 2026",
-          "slug": "iesire-30-apr-3-mai-2026",
+          "slug": "mai-2026",
           "subtitle": "Tabără de primăvară",
-          "info": "Tabără de weekend cu întreaga comunitate. Programul va fi anunțat în curând.",
+          "info": [
+            "Referitor la ieșirea cu biserica din mai, la pensiunea Sequoia, revin cu detalii legate de cazare și prețuri:",
+            "<b>1. Program:</b> Mini tabăra noastră va începe joi după-masă, 30 aprilie (ora o vom comunica ulterior) și se va încheia duminică, 3 mai, după masa de amiază.",
+            "<b>2. Prețuri</b> (pentru 3 nopți de cazare și toate mesele incluse, tip bufet suedez):",
+            "• Adult (în cameră single) - 1.000 lei",
+            "• Adult (în cameră 2-5 pers.) - 800 lei",
+            "• Copil 3-12 ani - 400 lei",
+            "• Copii 0-3 ani - gratuit",
+            "<b>3. Meniuri speciale:</b> Nu se asigură meniuri speciale pentru intoleranțe/alergii. Dacă sunt situații de acest fel trebuie să suplimentați de acasă cu ce aveți nevoie și să consumați ceea ce puteți din mâncarea pusă la dispoziție.",
+            "<b>4. Rezervări:</b> Pentru o bună organizare vă rugăm să vă rezervați locul efectuând o plată în avans de 400 lei/adult și 200 lei/copil până la data de 15 martie și restul sumei va fi achitată până la data de 20 aprilie. Banii se virează în contul bisericii, cu mențiunea <i>tabără</i> și îl notificați pe Viorel Culea."
+          ],
           "url": "https://pensiuneasequoia.ro/ro/",
           "textbuton": "Vezi locația",
           "dataStart": "2026-04-30",
