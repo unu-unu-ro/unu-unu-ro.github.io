@@ -1,0 +1,74 @@
+{
+  "eventInfo": {
+    "title": "Programul detaliat",
+    "subtitle": "",
+    "dateRange": "30 Aprilie - 3 Mai 2026",
+    "location": "",
+    "urls": [],
+    "timezone": "Europe/Bucharest"
+  },
+  "days": [
+    {
+      "id": "day-1",
+      "date": "2026-04-30",
+      "dayLabel": "Joi, 30 Aprilie",
+      "theme": "Sosire & Bun Venit",
+      "activities": []
+    },
+    {
+      "id": "day-2",
+      "date": "2026-05-01",
+      "dayLabel": "Vineri, 1 Mai",
+      "theme": "Întâlniri și Activități",
+      "activities": []
+    },
+    {
+      "id": "day-3",
+      "date": "2025-05-02",
+      "dayLabel": "Sâmbătă, 2 Mai",
+      "theme": "Întâlniri și Activități",
+      "activities": []
+    },
+    {
+      "id": "day-4",
+      "date": "2025-05-03",
+      "dayLabel": "Duminică, 3 Mai",
+      "theme": "Închinare și Plecare",
+      "activities": []
+    }
+  ],
+  "activityTypes": {
+    "logistics": {
+      "color": "#9CA3AF",
+      "icon": "📋"
+    },
+    "session": {
+      "color": "#3B82F6",
+      "icon": "📖"
+    },
+    "meal": {
+      "color": "#F59E0B",
+      "icon": "🍽️"
+    },
+    "break": {
+      "color": "#FDE68A",
+      "icon": "☕"
+    },
+    "worship": {
+      "color": "#8B5CF6",
+      "icon": "🙏"
+    },
+    "recreation": {
+      "color": "#10B981",
+      "icon": "⚽"
+    },
+    "meeting": {
+      "color": "#EC4899",
+      "icon": "👥"
+    },
+    "other": {
+      "color": "#6B7280",
+      "icon": "📌"
+    }
+  }
+}
