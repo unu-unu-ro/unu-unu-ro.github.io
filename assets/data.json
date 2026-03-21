@@ -40,7 +40,7 @@
           "slug": "intalniri-craciun-2025",
           "subtitle": "Sărbătorim împreună Nașterea Domnului",
           "info": [
-            "Ne vom întâlni în perioada sărbătorilor de iarnă pentru a celebra Nașterea Domnului Isus Hristos împreună. Iată programul întâlnirilor noastre speciale:",
+            "Ne vom întâlni în perioada sărbătorilor de iarnă pentru a celebra Nașterea Domnului Isus HristOS împreună. Iată programul întâlnirilor noastre speciale:",
             "24.12, 18:00 - seară de colinde",
             "25.12, 18:00 - întâlnire de sărbătoare",
             "28.12, 10:00 - întâlnirea bisericii",
@@ -112,6 +112,43 @@
           "tip": "tabără",
           "schedulefile": "mai26.json",
           "locatie": "Pensiunea Sequoia"
+        },
+        {
+          "titlu": "Tabara cu adolescentii",
+          "slug": "tabara-adolescenti-2026",
+          "subtitle": "Tabara pentru adolescenti",
+          "info": [
+            "<b>📅 Perioada:</b> 25–29 august 2026",
+            "<b>Descriere:</b> Tabără pentru adolescenți cu activități, învățare în grup și timp de comunitate.",
+            "<b>Înscrieri:</b> Locuri limitate — vă rugăm să confirmați participarea din timp.",
+            "<b>Contact:</b> Otniel Muresan"
+          ],
+          "url": "",
+          "schedulefile": "",
+          "textbuton": "",
+          "dataStart": "2026-08-25",
+          "dataEnd": "2026-08-29",
+          "tip": "tabără",
+          "locatie": ""
+        },
+        {
+          "titlu": "Tabara copiilor 2026",
+          "slug": "tabara-copii-2026",
+          "subtitle": "Tabara pentru copii",
+          "info": [
+            "<b>📅 Perioada:</b> 13–16 august 2026",
+            "<b>Locație:</b> Tabăra Gura Vlădeșei — <a href=\"https://www.facebook.com/elpisdej\" target=\"_blank\" rel=\"noopener\">pagina Facebook</a>",
+            "<b>Descriere:</b> Tabără pentru copii cu program pe zile, jocuri și activități în aer liber.",
+            "<b>Înscrieri:</b> Părinții pot înscrie copiii trimițând mesaj organizatorilor.",
+            "<b>Contact:</b> Simona Muresan"
+          ],
+          "url": "",
+          "schedulefile": "",
+          "textbuton": "",
+          "dataStart": "2026-08-13",
+          "dataEnd": "2026-08-16",
+          "tip": "tabără",
+          "locatie": "Tabara Gura Vladesei"
         }
       ]
     }
