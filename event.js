@@ -337,6 +337,7 @@ async function loadScheduleWidget(scheduleFile) {
       displayMode: "tabs",
       options: {
         showSearch: false,
+        showHeader: false,
         showIcons: true,
         showEndTimes: true,
         showSpeakers: true,
