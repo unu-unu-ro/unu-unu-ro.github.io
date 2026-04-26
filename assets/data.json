@@ -95,15 +95,11 @@
           "slug": "mai-2026",
           "subtitle": "Tabără de primăvară",
           "info": [
-            "Referitor la ieșirea cu biserica din mai, la pensiunea Sequoia, revin cu detalii legate de cazare și prețuri:",
-            "<b>1. Program:</b> Mini tabăra noastră va începe joi după-masă, 30 aprilie (ora o vom comunica ulterior) și se va încheia duminică, 3 mai, după masa de amiază.",
-            "<b>2. Prețuri</b> (pentru 3 nopți de cazare și toate mesele incluse, tip bufet suedez):",
+            "<b>Prețuri</b> (pentru 3 nopți de cazare și toate mesele incluse, tip bufet suedez):",
             "• Adult (în cameră single) - 1.000 lei",
             "• Adult (în cameră 2-5 pers.) - 800 lei",
             "• Copil 3-12 ani - 400 lei",
-            "• Copii 0-3 ani - gratuit",
-            "<b>3. Meniuri speciale:</b> Nu se asigură meniuri speciale pentru intoleranțe/alergii. Dacă sunt situații de acest fel trebuie să suplimentați de acasă cu ce aveți nevoie și să consumați ceea ce puteți din mâncarea pusă la dispoziție.",
-            "<b>4. Rezervări:</b> Pentru o bună organizare vă rugăm să vă rezervați locul efectuând o plată în avans de 400 lei/adult și 200 lei/copil până la data de 15 martie și restul sumei va fi achitată până la data de 20 aprilie. Banii se virează în contul bisericii, cu mențiunea <i>tabără</i> și îl notificați pe Viorel Culea."
+            "• Copii 0-3 ani - gratuit"
           ],
           "url": "https://pensiuneasequoia.ro/ro/",
           "textbuton": "Vezi locația",
@@ -114,9 +110,9 @@
           "locatie": "Pensiunea Sequoia"
         },
         {
-          "titlu": "Tabara cu adolescentii",
+          "titlu": "Tabăra adolescenților",
           "slug": "tabara-adolescenti-2026",
-          "subtitle": "Tabara pentru adolescenti",
+          "subtitle": "Tabăra pentru adolescenți",
           "info": [
             "<b>📅 Perioada:</b> 25–29 august 2026",
             "<b>Descriere:</b> Tabără pentru adolescenți cu activități, învățare în grup și timp de comunitate.",
@@ -132,9 +128,9 @@
           "locatie": ""
         },
         {
-          "titlu": "Tabara copiilor 2026",
+          "titlu": "Tabăra copiilor 2026",
           "slug": "tabara-copii-2026",
-          "subtitle": "Tabara pentru copii",
+          "subtitle": "Tabăra pentru copii",
           "info": [
             "<b>📅 Perioada:</b> 13–16 august 2026",
             "<b>Locație:</b> Tabăra Gura Vlădeșei — <a href=\"https://www.facebook.com/elpisdej\" target=\"_blank\" rel=\"noopener\">pagina Facebook</a>",

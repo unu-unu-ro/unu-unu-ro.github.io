@@ -1,10 +1,15 @@
 {
   "eventInfo": {
-    "title": "Programul detaliat",
-    "subtitle": "",
+    "title": "Ieșire 30 Apr - 3 Mai 2026",
+    "subtitle": "Planificare & informații utile",
     "dateRange": "30 Aprilie - 3 Mai 2026",
-    "location": "",
-    "urls": [],
+    "location": "Valea Draganului",
+    "urls": [
+      {
+        "url": "https://maps.app.goo.gl/ds54EMt92p4Jd7Rk8",
+        "title": "Google maps"
+      }
+    ],
     "timezone": "Europe/Bucharest"
   },
   "days": [
@@ -13,28 +18,218 @@
       "date": "2026-04-30",
       "dayLabel": "Joi, 30 Aprilie",
       "theme": "Sosire & Bun Venit",
-      "activities": []
+      "activities": [
+        {
+          "id": "d1-a1",
+          "startTime": "18:30",
+          "endTime": "19:30",
+          "title": "Cina",
+          "type": "meal",
+          "icon": "🍲"
+        },
+        {
+          "id": "d1-a2",
+          "startTime": "19:30",
+          "endTime": "21:00",
+          "title": "Întâlnire de seară",
+          "type": "worship",
+          "icon": "🙌"
+        }
+      ]
     },
     {
       "id": "day-2",
       "date": "2026-05-01",
       "dayLabel": "Vineri, 1 Mai",
       "theme": "Întâlniri și Activități",
-      "activities": []
+      "activities": [
+        {
+          "id": "d2-a1",
+          "startTime": "08:30",
+          "endTime": "09:30",
+          "title": "Mic dejun",
+          "type": "meal",
+          "icon": "🍞"
+        },
+        {
+          "id": "d2-a2",
+          "startTime": "09:30",
+          "endTime": "10:00",
+          "title": "Timp de închinare & rugăciune",
+          "description": "30 minute",
+          "type": "worship",
+          "icon": "🙏"
+        },
+        {
+          "id": "d2-a3",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "title": "Întâlnire femei",
+          "type": "meeting",
+          "icon": "👥"
+        },
+        {
+          "id": "d2-a4",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "title": "Tiroliana pentru copii",
+          "type": "recreation",
+          "icon": "🌲"
+        },
+        {
+          "id": "d2-a5",
+          "startTime": "13:00",
+          "endTime": "14:30",
+          "title": "Prânz",
+          "type": "meal",
+          "icon": "🍛"
+        },
+        {
+          "id": "d2-a6",
+          "startTime": "14:30",
+          "endTime": "17:30",
+          "title": "Plimbări / timp liber / sport",
+          "type": "recreation",
+          "icon": "⚽"
+        },
+        {
+          "id": "d2-a8",
+          "startTime": "17:30",
+          "endTime": "19:00",
+          "title": "Întâlnire de seară: Închinare + Mesaj",
+          "type": "worship",
+          "icon": "🎶"
+        },
+        {
+          "id": "d2-a9",
+          "startTime": "19:00",
+          "endTime": "20:30",
+          "title": "Cina",
+          "type": "meal",
+          "icon": "🍽️"
+        },
+        {
+          "id": "d2-a10",
+          "startTime": "20:30",
+          "endTime": "22:00",
+          "title": "Jocuri în grupuri mici, părtășie",
+          "type": "recreation",
+          "icon": "🧩"
+        }
+      ]
     },
     {
       "id": "day-3",
-      "date": "2025-05-02",
+      "date": "2026-05-02",
       "dayLabel": "Sâmbătă, 2 Mai",
-      "theme": "Întâlniri și Activități",
-      "activities": []
+      "theme": "Drumeție și Activități",
+      "activities": [
+        {
+          "id": "d3-a2",
+          "startTime": "08:30",
+          "endTime": "09:30",
+          "title": "Mic dejun",
+          "type": "meal",
+          "icon": "🥐"
+        },
+        {
+          "id": "d3-a3",
+          "startTime": "09:30",
+          "endTime": "10:00",
+          "title": "Timp de închinare & rugăciune",
+          "description": "30 minute",
+          "type": "worship",
+          "icon": "⛪"
+        },
+        {
+          "id": "d3-a4",
+          "startTime": "10:00",
+          "endTime": "13:00",
+          "title": "Drumeție la arborele Sequoia",
+          "type": "recreation",
+          "icon": "🥾"
+        },
+        {
+          "id": "d3-a5",
+          "startTime": "13:00",
+          "endTime": "14:30",
+          "title": "Prânz",
+          "type": "meal",
+          "icon": "🍲"
+        },
+        {
+          "id": "d3-a6",
+          "startTime": "14:30",
+          "endTime": "17:30",
+          "title": "Timp liber / competiții sportive / board games",
+          "type": "recreation",
+          "icon": "🏀"
+        },
+        {
+          "id": "d3-a7",
+          "startTime": "15:30",
+          "endTime": "17:30",
+          "title": "Jocuri organizate cu copiii",
+          "type": "recreation",
+          "icon": "🎨"
+        },
+        {
+          "id": "d3-a8",
+          "startTime": "17:30",
+          "endTime": "19:00",
+          "title": "Întâlnire de seară: Închinare + Mesaj",
+          "type": "worship",
+          "icon": "🎼"
+        },
+        {
+          "id": "d3-a9",
+          "startTime": "19:00",
+          "endTime": "20:00",
+          "title": "Cina",
+          "type": "meal",
+          "icon": "🍴"
+        },
+        {
+          "id": "d3-a10",
+          "startTime": "20:30",
+          "endTime": "22:00",
+          "title": "Foc de tabără",
+          "type": "recreation",
+          "icon": "🔥"
+        }
+      ]
     },
     {
       "id": "day-4",
-      "date": "2025-05-03",
+      "date": "2026-05-03",
       "dayLabel": "Duminică, 3 Mai",
       "theme": "Închinare și Plecare",
-      "activities": []
+      "activities": [
+        {
+          "id": "d4-a1",
+          "startTime": "08:30",
+          "endTime": "09:30",
+          "title": "Mic dejun",
+          "type": "meal",
+          "icon": "🥞"
+        },
+        {
+          "id": "d4-a2",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "title": "Întâlnire de Biserică",
+          "type": "worship",
+          "icon": "⛪"
+        },
+        {
+          "id": "d4-a3",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "title": "Prânz",
+          "type": "meal",
+          "icon": "🍲"
+        }
+      ]
     }
   ],
   "activityTypes": {

@@ -314,7 +314,7 @@ function setupShareButtons(event) {
 
 // Load and initialize schedule widget
 async function loadScheduleWidget(scheduleFile) {
-  const scheduleSection = document.getElementById("event-schedule-section");
+  const scheduleSection = document.getElementById("orar");
   const scheduleContainer = document.getElementById("schedule-container");
 
   try {
@@ -349,6 +349,11 @@ async function loadScheduleWidget(scheduleFile) {
 
     // Show the schedule section
     scheduleSection.style.display = "block";
+
+    // Scroll to schedule if URL hash is #orar
+    if (window.location.hash === "#orar") {
+      setTimeout(() => scheduleSection.scrollIntoView({ behavior: "smooth" }), 100);
+    }
   } catch (error) {
     console.error("Eroare:", error);
     scheduleContainer.innerHTML =
