@@ -42,13 +42,17 @@ function buildVEVENT(activity, dateStr, location, timezone) {
     : toICSDateTime(dateStr, activity.startTime);
   const uid = `${activity.id || activity.title.replace(/\s+/g, "-")}-${dateStr}@unu-unu.ro`;
 
+  const summary = activity.icon
+    ? `${activity.icon} ${activity.title}`
+    : activity.title;
+
   const lines = [
     "BEGIN:VEVENT",
     `UID:${uid}`,
     `DTSTAMP:${dtstamp()}`,
     `DTSTART;TZID=${timezone}:${start}`,
     `DTEND;TZID=${timezone}:${end}`,
-    `SUMMARY:${escapeICS(activity.title)}`,
+    `SUMMARY:${escapeICS(summary)}`,
   ];
   if (activity.description) lines.push(`DESCRIPTION:${escapeICS(activity.description)}`);
   if (location) lines.push(`LOCATION:${escapeICS(location)}`);

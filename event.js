@@ -471,13 +471,16 @@ function buildVEVENT(activity, dateStr, location, timezone) {
   const description = activity.description
     ? activity.description.replace(/,/g, "\\,").replace(/\n/g, "\\n")
     : "";
+  const summary = activity.icon
+    ? `${activity.icon} ${activity.title}`
+    : activity.title;
   return [
     "BEGIN:VEVENT",
     `UID:${uid}`,
     `DTSTAMP:${dtstamp}`,
     `DTSTART;TZID=${timezone}:${start}`,
     `DTEND;TZID=${timezone}:${end}`,
-    `SUMMARY:${activity.title.replace(/,/g, "\\,")}`,
+    `SUMMARY:${summary.replace(/,/g, "\\,")}`,
     description ? `DESCRIPTION:${description}` : null,
     location ? `LOCATION:${location.replace(/,/g, "\\,")}` : null,
     "END:VEVENT",
