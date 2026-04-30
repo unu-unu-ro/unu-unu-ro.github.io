@@ -423,7 +423,7 @@ function buildCalendarModal(scheduleData, scheduleFile) {
   // Add-all button — use static file URL if available (best iOS compatibility)
   addAllBtn.addEventListener("click", () => {
     if (staticICSUrl) {
-      window.location.href = staticICSUrl;
+      window.location.href = `${staticICSUrl}?v=${Date.now()}`;
     } else {
       openAllActivitiesICS(scheduleData, location, timezone, eventTitle);
     }
