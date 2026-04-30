@@ -24,7 +24,10 @@ Acest proiect web este hub-ul informațional oficial al Bisericii Unu Unu ([unu-
 ├── assets/
 │   ├── data.json       # Datele evenimentelor și secțiunilor
 │   └── ...             # Logo-uri și alte resurse
-└── schedules/          # Fișiere JSON pentru programele evenimentelor
+├── schedules/          # Fișiere JSON cu programele evenimentelor
+├── calendars/          # Fișiere .ics generate (nu edita manual)
+└── scripts/
+    └── generate-ics.js # Script pentru generarea fișierelor .ics
 ```
 
 ## Pagini
@@ -55,6 +58,22 @@ cd unu-unu-ro.github.io
 ### Dezvoltare:
 
 Pentru dezvoltare locală, folosește un server local (de ex. Live Server în VS Code) pentru a testa URL-urile curate.
+
+### Calendar ICS (adaugă în telefon):
+
+Fiecare eveniment cu program (`schedulefile`) expune un buton **Calendar** care permite utilizatorilor să adauge activitățile direct în calendarul nativ al telefonului.
+
+Fișierele `.ics` din `calendars/` sunt generate din `schedules/*.json` și trebuie regenerate ori de câte ori modifici un program.
+
+**Cum regenerezi:**
+
+```bash
+node scripts/generate-ics.js
+```
+
+Scriptul procesează toate fișierele din `schedules/` și suprascrie fișierele corespunzătoare din `calendars/`. Commitează ambele fișiere împreună (`schedules/xxx.json` + `calendars/xxx.ics`).
+
+> **Notă:** Fișierele `.ics` sunt servite de GitHub Pages cu `Content-Type: text/calendar`, ceea ce permite iOS/Android să deschidă automat aplicația Calendar la accesarea linkului.
 
 ### Publicare:
 

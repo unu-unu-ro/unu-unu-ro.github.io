@@ -350,6 +350,9 @@ async function loadScheduleWidget(scheduleFile) {
     // Show the schedule section
     scheduleSection.style.display = "block";
 
+    // Build calendar modal from schedule data
+    buildCalendarModal(data, scheduleFile);
+
     // Scroll to schedule if URL hash is #orar
     if (window.location.hash === "#orar") {
       setTimeout(() => scheduleSection.scrollIntoView({ behavior: "smooth" }), 100);
@@ -360,4 +363,175 @@ async function loadScheduleWidget(scheduleFile) {
       '<p style="text-align:center; padding: 40px; color: #e53e3e;">Eroare la încărcarea programului. Vă rugăm reîncărcați pagina.</p>';
     scheduleSection.style.display = "block";
   }
+}
+
+// Build the calendar modal with individual activity buttons
+function buildCalendarModal(scheduleData, scheduleFile) {
+  const calendarBtn = document.getElementById("calendar-btn");
+  const modal = document.getElementById("calendar-modal");
+  const modalBody = document.getElementById("calendar-modal-body");
+  const closeBtn = modal.querySelector(".calendar-modal-close");
+  const backdrop = modal.querySelector(".calendar-modal-backdrop");
+  const addAllBtn = document.getElementById("calendar-add-all");
+
+  const timezone = scheduleData.eventInfo?.timezone || "Europe/Bucharest";
+  const location = scheduleData.eventInfo?.location || "";
+  const eventTitle = scheduleData.eventInfo?.title || "";
+
+  // Static .ics URL if file exists in calendars/
+  const staticICSUrl = scheduleFile
+    ? `calendars/${scheduleFile.replace(".json", ".ics")}`
+    : null;
+
+  // Populate modal body
+  modalBody.innerHTML = "";
+  (scheduleData.days || []).forEach((day) => {
+    if (!day.activities || day.activities.length === 0) return;
+
+    const group = document.createElement("div");
+    group.className = "calendar-day-group";
+
+    const label = document.createElement("div");
+    label.className = "calendar-day-label";
+    label.textContent = day.dayLabel || day.date;
+    group.appendChild(label);
+
+    day.activities.forEach((activity) => {
+      const btn = document.createElement("button");
+      btn.className = "calendar-activity-btn";
+      btn.innerHTML = `
+        <span class="calendar-activity-icon">${activity.icon || "📅"}</span>
+        <span class="calendar-activity-info">
+          <span class="calendar-activity-title">${activity.title}</span>
+          <span class="calendar-activity-time">${activity.startTime}${activity.endTime ? " – " + activity.endTime : ""}</span>
+        </span>
+        <svg class="calendar-activity-dl" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+      `;
+      btn.addEventListener("click", () => {
+        openActivityICS(activity, day.date, location, timezone);
+      });
+      group.appendChild(btn);
+    });
+
+    modalBody.appendChild(group);
+  });
+
+  // Add-all button — use static file URL if available (best iOS compatibility)
+  addAllBtn.addEventListener("click", () => {
+    if (staticICSUrl) {
+      window.location.href = staticICSUrl;
+    } else {
+      openAllActivitiesICS(scheduleData, location, timezone, eventTitle);
+    }
+  });
+
+  // Show the calendar button
+  calendarBtn.style.display = "inline-flex";
+
+  // Open modal
+  calendarBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  });
+
+  // Close modal
+  const closeModal = () => {
+    modal.style.display = "none";
+    document.body.style.overflow = "";
+  };
+  closeBtn.addEventListener("click", closeModal);
+  backdrop.addEventListener("click", closeModal);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.style.display !== "none") closeModal();
+  });
+}
+
+// Format a date+time string to ICS format: YYYYMMDDTHHMMSS
+function toICSDateTime(dateStr, timeStr) {
+  const [year, month, day] = dateStr.split("-");
+  const [hour, minute] = timeStr.split(":");
+  return `${year}${month}${day}T${hour}${minute}00`;
+}
+
+// Build a single VEVENT block string
+function buildVEVENT(activity, dateStr, location, timezone) {
+  const start = toICSDateTime(dateStr, activity.startTime);
+  const end = activity.endTime
+    ? toICSDateTime(dateStr, activity.endTime)
+    : toICSDateTime(dateStr, activity.startTime);
+  const uid = `${activity.id || activity.title.replace(/\s+/g, "-")}-${dateStr}@unu-unu.ro`;
+  const dtstamp = toICSDateTime(
+    new Date().toISOString().slice(0, 10),
+    new Date().toTimeString().slice(0, 5)
+  );
+  const description = activity.description
+    ? activity.description.replace(/,/g, "\\,").replace(/\n/g, "\\n")
+    : "";
+  return [
+    "BEGIN:VEVENT",
+    `UID:${uid}`,
+    `DTSTAMP:${dtstamp}`,
+    `DTSTART;TZID=${timezone}:${start}`,
+    `DTEND;TZID=${timezone}:${end}`,
+    `SUMMARY:${activity.title.replace(/,/g, "\\,")}`,
+    description ? `DESCRIPTION:${description}` : null,
+    location ? `LOCATION:${location.replace(/,/g, "\\,")}` : null,
+    "END:VEVENT",
+  ]
+    .filter(Boolean)
+    .join("\r\n");
+}
+
+// Open an ICS — use a data: URI so the OS routes it to the native Calendar app
+// on both iOS and Android. Browsers treat data:text/calendar as a calendar file.
+function openICSBlob(icsContent, fallbackFilename) {
+  window.location.href =
+    "data:text/calendar;charset=utf-8," + encodeURIComponent(icsContent);
+}
+
+// Open a single activity as an ICS
+function openActivityICS(activity, dateStr, location, timezone) {
+  const vevent = buildVEVENT(activity, dateStr, location, timezone);
+  const ics = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Unu Unu//Calendar//RO",
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH",
+    vevent,
+    "END:VCALENDAR",
+  ].join("\r\n");
+  const safeName = activity.title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/gi, "-")
+    .replace(/^-|-$/g, "");
+  openICSBlob(ics, `${safeName}.ics`);
+}
+
+// Open all activities across all days as one ICS
+function openAllActivitiesICS(scheduleData, location, timezone, eventTitle) {
+  const vevents = [];
+  (scheduleData.days || []).forEach((day) => {
+    (day.activities || []).forEach((activity) => {
+      vevents.push(buildVEVENT(activity, day.date, location, timezone));
+    });
+  });
+  const ics = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Unu Unu//Calendar//RO",
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH",
+    ...vevents,
+    "END:VCALENDAR",
+  ].join("\r\n");
+  const safeName = (eventTitle || "program")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/gi, "-")
+    .replace(/^-|-$/g, "");
+  openICSBlob(ics, `${safeName}.ics`);
 }
